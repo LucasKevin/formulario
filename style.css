@@ -11,27 +11,37 @@
 }
 
 body {
-    background-image: url('assets/pexels-pixabay-268533.jpg');
-
+    background: url('assets/pexels-pixabay-268533.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
 }
+
 
 header {
     color: #ffffff;
-    text-align: center;
+    text-align:  justify center;
     position: absolute;
     top: 40%;
-    left: 30%;
+    left: 34%;
     transform: translate(-50%, -50%);
+
+ 
 }
 
 header > h1 {
     font-family: destaque;
     font-size: 3.8em;
-    }
+
+
+
+}
 
 header > p {
     font-size: 1.2em;
     text-align: justify;
+
+
+
 }
 
 
@@ -80,5 +90,46 @@ button {
     width: 100%;
     box-shadow: 1,1,1,1, black;
     border-radius: 5px;
+    cursor: pointer;
+}
+
+@media (max-width: 1468px) {
+
+    body {
+        overflow: hidden;
+    }
+
+    header {
+        font-size: 10px;
+        text-align: center;
+        left: 50%;
+        width: 50%;
+        overflow: hidden;
+        top: 17%;
+    }
+
+    header > p {
+        text-align: relative;
+        left: 10px;
+    }
+
+    div#content {
+        position: absolute;
+        padding: 25px;
+        left: 50%;
+        top: 70%;
+        overflow: hidden;
+    }
+
+    main > h1 {
+        position: absolute;
+        padding: 10px;
+        top: 16%;
+        width: 10em;
+        left: 50%;
+        top: 38%;
+    }
+
+
 }
 
